@@ -1,4 +1,7 @@
 .navbar-containter {
+  position: fixed;
+  top: 0px;
+  z-index: 50;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,8 +9,8 @@
   width: 80vw;
   height: 35px;
   margin-left: 10%;
-  margin-right: 10%;
   border-bottom: 0.5px solid rgb(207, 207, 207);
+  background-color: rgb(255, 255, 255);
 }
 
 .flex-dir-hor {
@@ -19,16 +22,40 @@
   flex-direction: column;
 }
 .logo {
-  padding-left: 10px;
+  font-family: "Poiret One", sans-serif;
+  font-style: normal;
+  font-size: larger;
+  padding-left: 20px;
   padding-right: 10px;
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bolder !important;
 }
 .navbuttons {
   cursor: pointer;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
   color: black;
+  font-style: normal;
 }
 
 .navbuttons:hover {
   color: rgb(70, 70, 70);
+  text-decoration: underline;
+}
+
+.work-sans {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.profile {
+  margin-left: auto;
+}
+.end {
+  padding-right: 25px;
 }

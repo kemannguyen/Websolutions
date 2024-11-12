@@ -15,5 +15,9 @@ code {
 .general {
   width: 80vw;
   margin-left: 10%;
-  margin-right: 10%;
+  padding: 10px;
+}
+
+.navbarpadding {
+  padding-top: 60px;
 }
