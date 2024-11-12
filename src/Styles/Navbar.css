@@ -1,0 +1,34 @@
+.navbar-containter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  width: 80vw;
+  height: 35px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-bottom: 0.5px solid rgb(207, 207, 207);
+}
+
+.flex-dir-hor {
+  display: flex;
+  flex-direction: row;
+}
+.flex-dir-ver {
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.navbuttons {
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: black;
+}
+
+.navbuttons:hover {
+  color: rgb(70, 70, 70);
+}
