@@ -5,3 +5,21 @@
 .landing-img {
   width: 100%;
 }
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+.space-between {
+  justify-content: space-between;
+}
+.paddingx-5p {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.img-text-margin {
+  margin-top: -17%;
+}
+.white {
+  color: white;
+}

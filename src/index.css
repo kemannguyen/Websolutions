@@ -21,3 +21,11 @@ code {
 .navbarpadding {
   padding-top: 60px;
 }
+.flex-dir-hor {
+  display: flex;
+  flex-direction: row;
+}
+.flex-dir-ver {
+  display: flex;
+  flex-direction: column;
+}
