@@ -8,11 +8,11 @@ const Navbar = () => {
   const ToHome = () => {
     scrollTo("header", "/");
   };
-  const ToProject = () => {
-    scrollTo("projects", "/projects");
-  };
   const ToPricing = () => {
     scrollTo("pricing", "/");
+  };
+  const ToProject = () => {
+    scrollTo("projects", "/referens");
   };
   const ToContact = () => {
     scrollTo("", "/contact");
@@ -27,11 +27,11 @@ const Navbar = () => {
         <p className="navbuttons work-sans" onClick={ToHome}>
           Overview
         </p>
-        <p className="navbuttons work-sans" onClick={ToProject}>
-          Projects
-        </p>
         <p className="navbuttons work-sans" onClick={ToPricing}>
           Pricing
+        </p>
+        <p className="navbuttons work-sans" onClick={ToProject}>
+          Referenses
         </p>
         <p className="navbuttons work-sans" onClick={ToContact}>
           Contact

@@ -19,7 +19,7 @@ function App() {
         <div>
           <Routes>
             <Route path="/" element={<LandingPage />} />
-            <Route path="/projects" element={<ProjectPage />} />
+            <Route path="/referens" element={<ProjectPage />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </div>
