@@ -13,14 +13,6 @@
   background-color: rgb(255, 255, 255);
 }
 
-.flex-dir-hor {
-  display: flex;
-  flex-direction: row;
-}
-.flex-dir-ver {
-  display: flex;
-  flex-direction: column;
-}
 .logo {
   font-family: "Poiret One", sans-serif;
   font-style: normal;
@@ -30,9 +22,6 @@
   cursor: pointer;
 }
 
-.bold {
-  font-weight: bolder !important;
-}
 .navbuttons {
   cursor: pointer;
   padding-top: 6px;
@@ -47,15 +36,27 @@
   text-decoration: underline;
 }
 
-.work-sans {
-  font-family: "Work Sans", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-}
-
 .profile {
   margin-left: auto;
 }
 .end {
   padding-right: 25px;
+}
+.menu-btn {
+  width: 40px;
+  height: 40px;
+  visibility: hidden;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media (max-width: 830px) {
+  .navbuttons {
+    display: none;
+    font-size: 0px;
+  }
+  .menu-btn {
+    visibility: visible;
+  }
 }

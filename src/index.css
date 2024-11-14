@@ -29,3 +29,22 @@ code {
   display: flex;
   flex-direction: column;
 }
+
+.work-sans {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.bold-mid {
+  font-weight: 500 !important;
+}
+
+.bold {
+  font-weight: bolder !important;
+}
+
+.section-padding {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
