@@ -1,6 +1,9 @@
 .test {
   margin-top: 1000px;
 }
+.text-color {
+  background-color: aqua;
+}
 
 .landing-img {
   width: 100%;
@@ -25,6 +28,12 @@
   padding-left: 5%;
   padding-right: 5%;
 }
+.paddingy-10 {
+  padding-top: 10px;
+}
+.paddingy-20 {
+  padding-top: 20px;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -35,6 +44,52 @@
 .img-text-margin {
   margin-top: -35%;
   padding-bottom: 35%;
+}
+.padding-5p {
+  padding: 5%;
+}
+.padding-5px {
+  padding: 5px;
+}
+.padding-10px {
+  padding: 10px;
+}
+.width-40p {
+  width: 46%;
+  min-width: 46%;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+.mr-5 {
+  margin-right: 5px;
+}
+.mb-5 {
+  margin-bottom: 5px;
+}
+.mt-5 {
+  margin-top: 5px;
 }
 
 /* Color */
@@ -47,13 +102,22 @@
 
 /* Design/Styling  */
 .font-title {
-  font-size: 3.5vw;
+  font-size: 3vw;
+}
+.font-large {
+  font-size: 50px;
 }
 .font-subtitle {
   font-size: larger;
 }
 .font-normal {
   font-size: medium !important;
+}
+.font-medium {
+  font-size: 16px !important;
+}
+.font-small {
+  font-size: small;
 }
 .font-bread {
   font-size: 1vw;
@@ -62,7 +126,47 @@
   text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0),
     1px 1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
 }
+.small-icon {
+  width: 25px;
+  height: 25px;
+}
+.feat-icon {
+  width: 10px;
+  height: 10px;
+}
+.icon-ring {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+}
+.section-underline {
+  border-bottom: 0.5px solid rgb(207, 207, 207);
+}
+.font-gray {
+  color: rgb(95, 95, 95);
+}
 
+.btn-rounded {
+  cursor: pointer;
+  border-radius: 5px;
+  border-style: none;
+  background-color: rgb(34, 107, 243);
+}
+.btn-rounded:hover {
+  background-color: rgb(80, 139, 250);
+}
+
+.price-card {
+  width: 44%;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 20px;
+  border-color: rgb(184, 184, 184);
+  padding: 20px;
+  margin: 10px;
+}
+
+/* Animations */
 .fade-in {
   animation: fadeIn 4s;
 }
@@ -98,9 +202,28 @@
     transform: translateY(0%);
   }
 }
+@media (max-width: 1200px) {
+  .font-title {
+    font-size: 35px;
+  }
+}
 
 @media (max-width: 830px) {
   .font-title {
-    font-size: 14px;
+    font-size: 25px;
   }
+  .font-bread {
+    font-size: 10px;
+  }
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

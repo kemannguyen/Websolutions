@@ -39,12 +39,19 @@ code {
 .bold-mid {
   font-weight: 500 !important;
 }
+.bold-mid-x {
+  font-weight: 600;
+}
+
+.bold-none {
+  font-weight: 400 !important;
+}
 
 .bold {
   font-weight: bolder !important;
 }
 
 .section-padding {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
