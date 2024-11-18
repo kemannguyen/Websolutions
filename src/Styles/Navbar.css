@@ -36,7 +36,7 @@
   text-decoration: underline;
 }
 
-.profile {
+.ml-auto {
   margin-left: auto;
 }
 .end {
@@ -46,17 +46,24 @@
   width: 40px;
   height: 40px;
   visibility: hidden;
-  margin-left: auto;
   margin-top: auto;
   margin-bottom: auto;
 }
+.dropdown {
+  background-color: rgba(255, 255, 255, 0);
+  border-style: none;
+  height: 100%;
+}
 
-@media (max-width: 830px) {
+@media (max-width: 1100px) {
   .navbuttons {
     display: none;
     font-size: 0px;
   }
   .menu-btn {
     visibility: visible;
+  }
+  .dropdown {
+    margin-left: auto;
   }
 }

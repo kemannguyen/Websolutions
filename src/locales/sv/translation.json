@@ -1,0 +1,68 @@
+{
+    "NAVBAR": "------------------------",
+    "Overview": "Översikt",
+    "Price": "Priser",
+    "Contact": "Kontakt",
+    "Referens": "Referenser",
+    "Login": "Logga in",
+    "Signup": "Registrera dig",
+
+
+    "LANDINGPAGE": "-----------------------",
+    "ImgText": "Förvandla din dröm hemsida till verklighet",
+    "ImgTextDesc": "Du kommer med idéerna och vi fixar resten",
+    "Header": "Att ha en egen webbplats har aldrig varit enklare",
+    "HeaderDesc": "Spara dina pengar och fokusera på att växa ditt företag istället! Med vår månadsprenumerations plan får du obegränsat stöd och obegränsade revisioner för din webbplats.",
+    "SubHeader": "Med vår månadsmodell",
+    "SubHeaderDesc1": "Reducera dina kostnader",
+    "SubHeaderDesc1AmountStart": 15000,
+    "SubHeaderDesc1AmountEnd": 1000,
+    "SubHeaderDesc1CurrencyFront": "",
+    "SubHeaderDesc1CurrencyEnd": "Kr",
+    "SubHeaderDesc2":"Obegränsat stöd i mer än",
+    "SubHeaderDesc3":"webbplats inom",
+    "SubHeaderDesc3Days":"dagar",
+
+    "Header2": "Ta full kontroll över ditt innehåll",
+    "Header2Desc": "Vår unika affärsmodell gör ändringar efter lansering prisvärda. Med månadsprenumerationen får du obegränsat stöd och obegränsade revisioner för din webbplats så länge du är prenumerant.",
+    "SubHeader1": "Var en del av hela processen att skapa din drömwebbplats",
+    "SubHeader1Desc": "För att säkerställa att dina mål och din vision uppfylls fullt ut får du vara med i varje steg av processen genom veckovisa möten och nära kontakt.",
+    "SubHeader2": "Fortsätt med oss eller gå solo efter 12 månader.",
+    "SubHeader2Desc": "När du väljer vår månadsprenumerationsmodell binder du dig för 12 månader, men efter kontraktsperioden kan du när som helst välja att bli självständig. Vi hjälper dig självklart att sätta upp hosting, domän och annat nödvändigt.",
+    "SubHeader3": "Minska dina kostnader och fokusera på din tillväxt.",
+    "SubHeader3Desc": "Istället för att lägga en stor del av din budget på en webbplats, använd den på annat för att växa ditt företag.",
+    "SubHeader4": "Obegränsat stöd och obegränsade revisioner.",
+    "SubHeader4Desc": "Under din tid tillsammans med oss har du obegränsade revisioner även efter lansering, vilket innebär att du kan testa olika designer och ändra webbplatsen utan bekymmer.",
+
+    "Header3": "Enkel, transparent prissättning.",
+    "Header3Desc": "Vårt mål är att du ska vara nöjd, vilket är varför vi erbjuder flera affärsmodeller: den traditionella engångsbetalningen och månadsprenumerationen.",
+    "PriceTitle1": "Tillväxtplan - månadsplan (minst 12 mån)",
+    "PriceCost1": "1000 Kr",
+    "Point1-1": "Fast pris",
+    "Point1-2": "24/7 Kundtjänst",
+
+    "PriceTitle2": "Traditionell plan - engångsbetalning",
+    "PriceCost2": "7,500 - 20,000 kr",
+    "Point2-1": "Priset varierar beroende på webbplats",
+    "Point2-2": "Kundsupport i 6 månader efter köp",
+
+    "Point3": "Search Engine Optimization",
+    "Point4": "Professionell webbdesign",
+    "Point5": "Responsiv för alla enheter",
+    "Point6": "Obegränsade revisioner efter lansering.",
+    "Point7": "Domän och hosting",
+    "Point8": "Var en del av hela processen",
+
+    "Order": "Se mer / Beställ",
+
+    "username": {
+        "label": "username",
+        "placeholder": "placeholder..."
+    },
+    "password": {
+        "label": "password",
+        "placeholder": "password placeholder..."
+    },
+    "location": "Enter the location",
+    "Address": "Enter the address"
+}

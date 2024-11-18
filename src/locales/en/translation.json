@@ -1,0 +1,68 @@
+{
+    "NAVBAR": "------------------------",
+    "Overview": "Overview",
+    "Price": "Pricing",
+    "Contact": "Contact",
+    "Referens": "Referenses",
+    "Login": "Login",
+    "Signup": "Signup",
+
+
+    "LANDINGPAGE": "-----------------------",
+    "ImgText": "Turn your dream website into reality",
+    "ImgTextDesc": "You come with the ideas and we'll fix the rest",
+    "Header": "Having your own website has never been more simple",
+    "HeaderDesc": "Save your money and focus on growing your company instead! With our monthly subscription plan you get unlimited support and revisions for your website.",
+    "SubHeader": "With our monthly model",
+    "SubHeaderDesc1": "Reduce your costs",
+    "SubHeaderDesc1AmountStart": 1500,
+    "SubHeaderDesc1AmountEnd": 100,
+    "SubHeaderDesc1CurrencyFront": "$",
+    "SubHeaderDesc1CurrencyEnd": "",
+    "SubHeaderDesc2":"Unlimited support for more than",
+    "SubHeaderDesc3":"Website within",
+    "SubHeaderDesc3Days":"days",
+
+    "Header2": "Take full control of your content",
+    "Header2Desc": "Our unique business model makes revisions after deployment affordable, with the monthly subscription plan you get unlimited support and revisions for your website for as long as your subscribed.",
+    "SubHeader1": "Be a part of the whole process of creating your dream website",
+    "SubHeader1Desc": "To ensure your goals and vision are fully met, you get to be a part of every step in the process through weekly meetings and close contact.",
+    "SubHeader2": "Continue with us or go solo after 12 months",
+    "SubHeader2Desc": "When selecting our monthly subscription model you're bound for 12 months, but after the contract period you can chose to go independent at any time. We'll of course help you set up the hosting, domain etc.",
+    "SubHeader3": "Reduce your cost and focus on your growth",
+    "SubHeader3Desc": "Instead of allocating a big chunk of your budget on a website use it else where to grow your company.",
+    "SubHeader4": "Unlimited support and revisions",
+    "SubHeader4Desc": "During your time together with us you have unlimited revisions even after deployment, which means you can try out different designs and change the website without worries.",
+
+    "Header3": "Simple, transparent pricing",
+    "Header3Desc": "Our goal is for you to satisfied which is why we offer multiple business models, the traditional pay one time and the monthly subscription.",
+    "PriceTitle1": "Growth plan - monthly plan (min 12 mo)",
+    "PriceCost1": "$100",
+    "Point1-1": "Static price",
+    "Point1-2": "24/7 customer support",
+
+    "PriceTitle2": "Traditional plan - pay once",
+    "PriceCost2": "$700-2000",
+    "Point2-1": "Price varies depending on website",
+    "Point2-2": "Customer support 6 month after purchase",
+
+    "Point3": "Search Engine Optimization",
+    "Point4": "Professional Web Design",
+    "Point5": "Responsive for all devices",
+    "Point6": "Unlimited revisions after deployment",
+    "Point7": "Domain and hosting",
+    "Point8": "Be a part of the whole process",
+
+    "Order": "See more / order",
+
+    "username": {
+        "label": "username",
+        "placeholder": "placeholder..."
+    },
+    "password": {
+        "label": "password",
+        "placeholder": "password placeholder..."
+    },
+    "location": "Enter the location",
+    "Address": "Enter the address"
+}

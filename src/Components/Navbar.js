@@ -1,14 +1,25 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useTransition } from "react";
 import "../Styles/Navbar.css";
 import { useScroll } from "./ScrollContext";
 import xicon from "../Image/x-icon1.png";
 import icon from "../Image/menu-icon.png";
+import i18n from "../i18n";
+import Select from "react-select";
+import { useTranslation } from "react-i18next";
+import CustomSelector from "./CustomSelector";
 
 const Navbar = () => {
   const [menubtn, setMenuBtn] = useState(false);
   const openMenu = () => setMenuBtn(!menubtn);
+  const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
+  const { t } = useTranslation();
 
   const { scrollTo } = useScroll();
+  const chooseLanguage = (e) => {
+    i18n.changeLanguage(e.target.value); // i18n.changeLanguage() is used to change the language assigned to lng in i18n.js file.
+    setSelectedLanguage(e.target.value);
+    console.log("test: ", selectedLanguage + " " + e.target.value);
+  };
 
   //makes the body non scrollable when nav menu is open
   useEffect(() => {
@@ -51,25 +62,29 @@ const Navbar = () => {
           <span>Solutions</span>
         </p>
         <p className="navbuttons work-sans" onClick={ToHome}>
-          Overview
+          {t("Overview")}
         </p>
         <p className="navbuttons work-sans" onClick={ToPricing}>
-          Pricing
+          {t("Price")}
         </p>
         <p className="navbuttons work-sans" onClick={ToProject}>
-          Referenses
+          {t("Referens")}
         </p>
         <p className="navbuttons work-sans" onClick={ToContact}>
-          Contact
+          {t("Contact")}
         </p>
+
+        <p className="navbuttons ml-auto">{t("Login")}</p>
+        <p className="navbuttons end">{t("Signup")}</p>
+        <span className="dropdown" />
+        <CustomSelector />
+
         <img
           className="menu-btn"
           src={menubtn ? xicon : icon}
           onClick={openMenu}
           alt=""
         />
-        <p className="navbuttons profile">Login</p>
-        <p className="navbuttons end">Signup</p>
       </div>
     </div>
   );

@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import ProjectPage from "./Pages/ProjectPage/ProjectPage";
 import { ScrollProvider } from "./Components/ScrollContext";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           </Routes>
         </div>
       </ScrollProvider>
+      <Footer />
     </Router>
   );
 }
