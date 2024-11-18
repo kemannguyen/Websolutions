@@ -4,22 +4,16 @@ import { useScroll } from "./ScrollContext";
 import xicon from "../Image/x-icon1.png";
 import icon from "../Image/menu-icon.png";
 import i18n from "../i18n";
-import Select from "react-select";
 import { useTranslation } from "react-i18next";
 import CustomSelector from "./CustomSelector";
+import NavScreen from "./NavScreen";
 
 const Navbar = () => {
   const [menubtn, setMenuBtn] = useState(false);
   const openMenu = () => setMenuBtn(!menubtn);
-  const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
   const { t } = useTranslation();
 
   const { scrollTo } = useScroll();
-  const chooseLanguage = (e) => {
-    i18n.changeLanguage(e.target.value); // i18n.changeLanguage() is used to change the language assigned to lng in i18n.js file.
-    setSelectedLanguage(e.target.value);
-    console.log("test: ", selectedLanguage + " " + e.target.value);
-  };
 
   //makes the body non scrollable when nav menu is open
   useEffect(() => {
@@ -85,6 +79,9 @@ const Navbar = () => {
           onClick={openMenu}
           alt=""
         />
+      </div>
+      <div className={menubtn ? "unhide" : "hide"}>
+        <NavScreen openMenu={setMenuBtn} />
       </div>
     </div>
   );

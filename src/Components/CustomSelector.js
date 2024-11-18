@@ -33,6 +33,7 @@ const CustomSelector = () => {
     console.log("onclick ", selected);
     setSelectedLanguage(selected);
     chooseLanguage(selected);
+    openSelector();
   };
 
   return (
