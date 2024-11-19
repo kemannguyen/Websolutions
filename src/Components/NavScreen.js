@@ -9,18 +9,23 @@ const NavScreen = ({ openMenu }) => {
 
   const ToHome = () => {
     scrollTo("header", "/");
+    openMenu(false);
   };
   const ToPricing = () => {
     scrollTo("pricing", "/");
+    openMenu(false);
   };
   const ToProject = () => {
     scrollTo("projects", "/referens");
+    openMenu(false);
   };
   const ToContact = () => {
     scrollTo("", "/contact");
+    openMenu(false);
   };
   const ToLogin = () => {
     scrollTo("", "/login");
+    openMenu(false);
   };
 
   return (
