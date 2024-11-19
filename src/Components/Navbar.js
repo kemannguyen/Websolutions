@@ -1,9 +1,8 @@
-import React, { useState, useEffect, useTransition } from "react";
+import React, { useState, useEffect } from "react";
 import "../Styles/Navbar.css";
 import { useScroll } from "./ScrollContext";
 import xicon from "../Image/x-icon1.png";
 import icon from "../Image/menu-icon.png";
-import i18n from "../i18n";
 import { useTranslation } from "react-i18next";
 import CustomSelector from "./CustomSelector";
 import NavScreen from "./NavScreen";
@@ -68,8 +67,8 @@ const Navbar = () => {
           {t("Contact")}
         </p>
 
-        <p className="navbuttons ml-auto">{t("Login")}</p>
-        <p className="navbuttons end">{t("Signup")}</p>
+        <p className="navbuttons ml-auto work-sans">{t("Login")}</p>
+        <p className="navbuttons end work-sans">{t("Signup")}</p>
         <span className="dropdown" />
         <CustomSelector />
 

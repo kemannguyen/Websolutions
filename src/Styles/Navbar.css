@@ -48,11 +48,23 @@
   visibility: hidden;
   margin-top: auto;
   margin-bottom: auto;
+  z-index: 50;
 }
 .dropdown {
   background-color: rgba(255, 255, 255, 0);
   border-style: none;
   height: 100%;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+}
+.unhide {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.4s ease-out;
 }
 
 @media (max-width: 1100px) {

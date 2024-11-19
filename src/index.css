@@ -40,7 +40,7 @@ code {
   font-weight: 500 !important;
 }
 .bold-mid-x {
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 
 .bold-none {

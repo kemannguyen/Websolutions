@@ -21,6 +21,8 @@ function App() {
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/referens" element={<ProjectPage />} />
+            <Route path="/contact" element={<ProjectPage />} />
+            <Route path="/login" element={<ProjectPage />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </div>
