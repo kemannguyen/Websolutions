@@ -18,6 +18,15 @@ const LandingPage = () => {
   const [headerShown, setHeaderShown] = useState(false);
   const { t } = useTranslation();
 
+  const { scrollTo } = useScroll();
+
+  const ToPricingTraditional = () => {
+    scrollTo("", "/pricing/traditional");
+  };
+  const ToPricingMonthly = () => {
+    scrollTo("", "/pricing/monthly");
+  };
+
   return (
     <div className="general work-sans">
       <section
@@ -232,7 +241,10 @@ const LandingPage = () => {
                 <img className="feat-icon mr-10" src={check} />
                 <text className="font-small">{t("Point8")}</text>
               </div>
-              <button className="mt-10 padding-10px btn-rounded white">
+              <button
+                className="mt-10 padding-10px btn-rounded white"
+                onClick={ToPricingMonthly}
+              >
                 <text className="bold-mid-x work-sans"> {t("Order")}</text>
               </button>
             </div>
@@ -277,7 +289,10 @@ const LandingPage = () => {
                 <img className="feat-icon mr-10" src={check} />
                 <text className="font-small">{t("Point8")}</text>
               </div>
-              <button className="mt-10 padding-10px btn-rounded white ">
+              <button
+                className="mt-10 padding-10px btn-rounded white "
+                onClick={ToPricingTraditional}
+              >
                 <text className="bold-mid-x work-sans"> {t("Order")}</text>
               </button>
             </div>

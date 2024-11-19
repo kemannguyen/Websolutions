@@ -18,6 +18,10 @@ code {
   padding: 10px;
 }
 
+.w100p {
+  width: 100%;
+}
+
 .navbarpadding {
   padding-top: 60px;
 }
@@ -54,4 +58,8 @@ code {
 .section-padding {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.font-italic {
+  font-style: italic;
 }

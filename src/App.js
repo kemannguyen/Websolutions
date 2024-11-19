@@ -11,6 +11,7 @@ import {
 import ProjectPage from "./Pages/ProjectPage/ProjectPage";
 import { ScrollProvider } from "./Components/ScrollContext";
 import Footer from "./Components/Footer";
+import PricingPage from "./Pages/PricingPage/PricingPage";
 
 function App() {
   return (
@@ -20,6 +21,14 @@ function App() {
         <div>
           <Routes>
             <Route path="/" element={<LandingPage />} />
+            <Route
+              path="/pricing/monthly"
+              element={<PricingPage index={0} />}
+            />
+            <Route
+              path="/pricing/traditional"
+              element={<PricingPage index={1} />}
+            />
             <Route path="/referens" element={<ProjectPage />} />
             <Route path="/contact" element={<ProjectPage />} />
             <Route path="/login" element={<ProjectPage />} />

@@ -55,6 +55,9 @@
 
     "Order": "Se mer / Beställ",
 
+    "MonPlan": "Månadsplan",
+    "TradPlan": "Traditionell plan",
+
     "username": {
         "label": "username",
         "placeholder": "placeholder..."

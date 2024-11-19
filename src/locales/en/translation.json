@@ -55,6 +55,9 @@
 
     "Order": "See more / order",
 
+    "MonPlan": "Monthly plan",
+    "TradPlan": "Traditional plan",
+
     "username": {
         "label": "username",
         "placeholder": "placeholder..."

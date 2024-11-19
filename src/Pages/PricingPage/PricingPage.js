@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
+import PricingTabs from "../../Components/CustomTabPanel";
 
-const PricingPage = () => {
-
-/*
+const PricingPage = (index1) => {
+  /*
 Enter this cost in the
 
 Domain Name	$0 to $20 per year
@@ -13,8 +13,10 @@ DIY Website Builder	$100 to $400 per year
 SSL Certificate	$0 to $249 per year
 */
   return (
-    <div>PricingPage</div>
-  )
-}
+    <div className="general navbarpadding work-sans">
+      <PricingTabs index={index1} />
+    </div>
+  );
+};
 
-export default PricingPage
+export default PricingPage;
