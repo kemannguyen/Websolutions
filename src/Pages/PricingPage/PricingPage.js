@@ -1,7 +1,11 @@
 import React from "react";
 import PricingTabs from "../../Components/CustomTabPanel";
+import UseTitle from "../../Components/UseTitle";
+import { useTranslation } from "react-i18next";
 
 const PricingPage = (index1) => {
+  const { t } = useTranslation();
+  UseTitle(t("Price"));
   /*
 Enter this cost in the
 

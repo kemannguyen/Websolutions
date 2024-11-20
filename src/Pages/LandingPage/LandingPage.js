@@ -12,6 +12,7 @@ import FadeInComponent from "../../Components/FadeInComponent";
 import check from "../../Image/checkmark-outline-green.png";
 import cross from "../../Image/close-outline-red.png";
 import { useTranslation } from "react-i18next";
+import UseTitle from "../../Components/UseTitle";
 
 const LandingPage = () => {
   const { sectionRefs } = useScroll();
@@ -26,6 +27,8 @@ const LandingPage = () => {
   const ToPricingMonthly = () => {
     scrollTo("", "/pricing/monthly");
   };
+
+  UseTitle(t("Home"));
 
   return (
     <div className="general work-sans">

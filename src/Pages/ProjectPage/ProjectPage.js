@@ -1,8 +1,12 @@
 import React from "react";
 import { useScroll } from "../../Components/ScrollContext";
+import UseTitle from "../../Components/UseTitle";
+import { useTranslation } from "react-i18next";
 
 const ProjectPage = () => {
   const { sectionRefs } = useScroll();
+  const { t } = useTranslation();
+  UseTitle(t("Referens"));
   return (
     <div className="general">
       <section

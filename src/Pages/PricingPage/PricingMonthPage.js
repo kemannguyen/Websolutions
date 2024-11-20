@@ -63,7 +63,23 @@ const PricingMonthPage = () => {
         need to allocate a huge sum to create a website but you can focus your
         budget on growing your company.
       </p>
-      <p className="font-gray paddingy-10">With our plan we'll take care of</p>
+      <text className="font-subtitle bold-mid paddingy-10">
+        {" "}
+        What expenses do we cover?
+      </text>
+      <p className="font-gray paddingy-10">
+        With our plan we'll take care of all expenses except the Database and
+        API expenses since it can scale up depending on the usage.
+        <br></br>
+        If the site requires a database or API integration we'll together plan
+        and discuss how it will work and how the cost can vary depending on
+        traffic so that you'll get full transparency of what to expect before
+        actually implementing it.
+      </p>
+      <text className="font-subtitle bold-mid paddingy-10 mt-60">
+        {" "}
+        What expenses do we cover?
+      </text>
     </div>
   );
 };
