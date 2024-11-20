@@ -35,10 +35,22 @@ export const ScrollProvider = ({ children }) => {
     if (location.pathname !== page) {
       // If we're not on the target page, navigate first and set the target
       setTarget({ section, page });
+      if (section == "") {
+        window.scrollTo({
+          top: 0,
+        });
+      }
       navigate(page);
     } else if (sectionRefs[section]?.current) {
-      // If already on the target page, scroll immediately
-      sectionRefs[section].current.scrollIntoView({ behavior: "smooth" });
+      if (section === "") {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      } else {
+        // If already on the target page, scroll immediately
+        sectionRefs[section].current.scrollIntoView({ behavior: "smooth" });
+      }
     }
   };
 

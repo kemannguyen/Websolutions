@@ -2,6 +2,7 @@ import React from "react";
 import PricingTabs from "../../Components/CustomTabPanel";
 import UseTitle from "../../Components/UseTitle";
 import { useTranslation } from "react-i18next";
+import "../../Styles/PricingPage.css";
 
 const PricingPage = (index1) => {
   const { t } = useTranslation();

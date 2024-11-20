@@ -33,6 +33,17 @@ code {
   display: flex;
   flex-direction: column;
 }
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-dir-h2v {
+  display: flex;
+  flex-direction: row !important;
+}
+.flex-dir-h2vr {
+  display: flex;
+  flex-direction: row !important;
+}
 
 .work-sans {
   font-family: "Work Sans", sans-serif;
@@ -62,4 +73,16 @@ code {
 
 .font-italic {
   font-style: italic;
+}
+.break-line {
+  white-space: pre-line;
+}
+
+@media (max-width: 830px) {
+  .flex-dir-h2v {
+    flex-direction: column !important;
+  }
+  .flex-dir-h2vr {
+    flex-direction: column-reverse !important;
+  }
 }

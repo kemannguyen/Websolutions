@@ -56,8 +56,66 @@
 
     "Order": "Se mer / Beställ",
 
+   
+
+    "PRICEPAGE": "----------------------------",
     "MonPlan": "Månadsplan",
+    "MPHeaderDesc": "Med vår månadsplan uppmuntrar vi tillväxt.",
+    "MPBread1": "Att starta ett nytt företag är ingen liten bedrift. Att hantera de tillgängliga resurserna på rätt sätt för att växa kan vara svårt. Var ska du fokusera först? Ska det vara på marknadsföring för att få synlighet och trafik, en webbplats för att ge dina kunder en plattform, eller kanske arbetskraft för att kunna hantera alla förfrågningar?\n\n Att skapa en webbplats kan kosta mycket pengar. Här är kostnaderna för att skapa en webbplats enligt",
+
+    "DomainName": "Domän Namn",
+    "WebHosting": "Web Hosting",
+    "Theme": "Tema eller mall",
+    "ProWebDes": "professionell Web Design ",
+    "DIYWB": "DIY Webbsidebyggare",
+    "SSL": "SSL Certifikat",
+    "DBnAPI": "Databaser och API",
+    "TotalCost": "Total kostnad:",
+
+    "DomainNamePrice": "0 kr till 220 kr per år.",
+    "WebHostingPrice": "330 kr till 5 500 kr per år.",
+    "ThemePrice": "0 kr till cirka 1 100 kr (engångsavgift).",
+    "ProWebDesPrice": "1 100 kr till 55 000 kr (engångsavgift).",
+    "DIYWBPrice": "1 100 kr till 4 400 kr per år.",
+    "SSLPrice": "0 kr till 2 750 kr per år.",
+    "DBnAPIPrice": "Kostnaden varierar beroende på användning.",
+    "TotalCostPriceYr": "1 430 kr till 12 870+ kr per år.",
+    "TotalCostPriceOne": "+ 1 100 kr till 56 100 kr (engångsavgift).",
+
+    "MPBread2": "Det är därför vi erbjuder vår månadsplan. Med denna behöver du inte avsätta en stor summa i förväg för att skapa en webbplats, vilket gör att du kan fokusera din budget på att växa ditt företag.\n\nMed ett fast pris på 1000 kr kan du känna dig trygg i att det inte kommer några oväntade kostnader.",
+    
+    "MPSubHeader1": "Vilka kostnader täcker vi?",
+    "MPBread3": "Med vår plan täcker vi alla kostnader, förutom kostnader för databaser och API, eftersom dessa kan skala upp beroende på användningen.\n\nOm webbplatsen kräver databas- eller API-integration kommer vi att arbeta tillsammans för att planera och diskutera hur det kommer att fungera och hur kostnaderna kan variera beroende på trafiken. På så sätt får du full transparens om de potentiella kostnaderna innan du bestämmer dig för att gå vidare med implementeringen.",
+    
+    "MPSubHeader2": "Vad ingår i planen?",
+    "MPBread4": "Vi tar hand om design, hosting, cybersäkerhet, SSL-certifikat, köp av domännamn, lansering av webbplatsen samt konstruktion av databaser och integration av API vid behov.\nObservera återigen att vi INTE täcker kostnader för databaser och API, eftersom dessa skalar upp beroende på användningen. \n\n Du kommer att ha tillgång till kundsupport 24/7 samt obegränsade revideringar, vilket innebär att du kan justera din webbplats när som helst.",
+    
+    "MPSubHeader3": "Hur ser processen ut?",
+    "MPBread5": "Processen börjar med ett inledande möte där vi diskuterar dina krav för webbplatsen. Vi kommer att utforska webbplatsens syfte, designen och temat du föreställer dig, det domännamn du föredrar samt de specifika funktioner du behöver.\n\nUtifrån detta skapar vi en detaljerad färdplan och håller regelbundna möten för att presentera mock-ups, samla in din feedback och finslipa designen. Dessa diskussioner säkerställer att vi anpassar oss efter din vision och gör nödvändiga justeringar eller tillägg till webbplatsen.\n\nNär allt är klart lanserar vi webbplatsen och gör den tillgänglig online. Dessutom ser vi till att den är fullt optimerad för sökmotorer för att hjälpa dig att effektivt nå din målgrupp. \n\n Du kommer att vara bunden till oss under en 12-månadersperiod, varefter du när som helst kan välja att bli oberoende. Detta innebär att du tar över hosting och hanteringen av domännamnet. Vi hjälper dig genom hela övergångsprocessen. Dock innebär detta också att du inte längre kommer att ha tillgång till obegränsade gratis revideringar och kundsupport dygnet runt.",
+
+    "MPSubHeader4": "Låter det intressant?",
+    "MPBread6": "Boka ett möte med oss för att diskutera vårt samarbete tillsammans!",
+
+    "OrderButton": "Boka ett möte",
+
+
     "TradPlan": "Traditionell plan",
+    "TPHeaderDesc": "Med vår traditionella plan behöver du bara betala en gång.",
+    "TPBread1": "Är du i färd med att starta ett nytt företag eller behöver du bara en ny webbplats som kräver lite underhåll? Då är detta det perfekta alternativet för dig.\n\nAtt skapa en webbplats kan kosta mycket pengar. Här är kostnaderna för att skapa en webbplats enligt",
+    "TPBread2": "Vi erbjuder professionella resultat till ett överkomligt pris. Hos oss behöver du inte spendera en förmögenhet. Våra prisklasser är:\n7 500 Kr för en enkel webbplats med 1-3 sidor utan databas, autentisering och API.\n10 000 kr för en webbplats med 1-5 sidor med autentisering (registrering och inloggning) och en databas som lagrar användare.\n15 000 kr för en webbplats med 1-6 sidor med autentisering, anpassade databas-tabeller förutom användare och en API-integration.\n20 000 kr för en webbplats med valfritt antal sidor med autentisering, anpassade databas-tabeller och alla API-integrationer du vill ha.\n\nOBS: Vi täcker inte användningskostnader för databaser och API",
+    
+    "TPSubHeader1": "Vilka kostnader täcker vi?",
+    "TPBread3": "Med vår plan täcker vi alla kostnader, förutom domännamn, hosting, databas- och API-kostnader, eftersom dessa kan skala beroende på användning.\n\nOm webbplatsen kräver databas- eller API-integration kommer vi att samarbeta för att planera och diskutera hur det kommer att fungera och hur kostnaderna kan variera beroende på trafiken. Detta säkerställer att du får full transparens om vad du kan förvänta dig innan du beslutar att gå vidare med implementeringen.\n\n Även om vi inte täcker vissa delar kommer vi självklart att hjälpa dig att sätta upp allt och säkerställa att du förstår processen.",
+    
+    "TPSubHeader2": "Vad ingår i planen?",
+    "TPBread4": "Vi tar hand om design, säkerställer cybersäkerhet, SSL-certifikat (första året), hjälper dig att köpa domännamnet, hosting och lansering av webbplatsen samt konstruktion av databaser och integration av API om det behövs.\nÅterigen, vi täcker inte kostnader för databaser och API, eftersom dessa skalar beroende på användning.\n\nEfter lansering kommer du att ha kundsupport i 6 månader för att säkerställa en smidig lansering av din webbplats innan du går helt oberoende. Under den perioden har du en gratis revidering som du kan använda. Eventuella revideringar efter den första kommer att kosta beroende på efterfrågan.",
+    
+    "TPSubHeader3": "Hur ser processen ut?",
+    "TPBread5": "Processen börjar med ett inledande möte där vi diskuterar dina krav för webbplatsen. Vi kommer att utforska webbplatsens syfte, den design och det tema du föreställer dig, det domännamn du föredrar samt de specifika funktioner du behöver.\n\nUtifrån detta kommer vi att bestämma priset, skapa en detaljerad färdplan och hålla regelbundna möten för att presentera mock-ups, samla in din feedback och finslipa designen. Dessa diskussioner säkerställer att vi anpassar oss efter din vision och gör nödvändiga justeringar på webbplatsen. Under denna tid har du obegränsade revideringar inom din fastställda prisklass.\n\nNär allt är klart kommer vi att hjälpa dig att lansera webbplatsen och göra den tillgänglig online. Dessutom ser vi till att den är fullt optimerad för sökmotorer för att hjälpa dig att nå din målgrupp effektivt.",
+
+    "TPSubHeader4": "Låter det intressant?",
+    "TPBread6": "Boka ett möte med oss för att diskutera vårt samarbete tillsammans!",
+
 
     "username": {
         "label": "username",

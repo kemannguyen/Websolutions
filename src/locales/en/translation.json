@@ -1,11 +1,13 @@
 {
     "NAVBAR": "------------------------",
+    "Home": "Home",
     "Overview": "Overview",
     "Price": "Pricing",
     "Contact": "Contact",
     "Referens": "Referenses",
     "Login": "Login",
     "Signup": "Signup",
+
 
 
     "LANDINGPAGE": "-----------------------",
@@ -55,8 +57,68 @@
 
     "Order": "See more / order",
 
+
+
+    "PRICEPAGE": "----------------------------",
     "MonPlan": "Monthly plan",
+    "MPHeaderDesc": "with our monthly plan we encourage growth",
+    "MPBread1": "Starting a new buisness isn't a small feat. Managing the available resources correctly in order to grow is hard. Where do you focus first? Is it in marketing to gain visibility and traffic or website to have an platform for your customers or maybe workforce so that you can handle all the requests. \n \n Creating a website can cost a lot of money. These are the cost to create an websiste according to",
+
+    "DomainName": "Domain Name",
+    "WebHosting": "Web Hosting",
+    "Theme": "Theme or Template",
+    "ProWebDes": "Professional Web Design ",
+    "DIYWB": "DIY Website Builder ",
+    "SSL": "SSL Certificate",
+    "DBnAPI": "Databases and API",
+    "TotalCost": "Total cost:",
+
+    "DomainNamePrice": "0$ to $20 per year",
+    "WebHostingPrice": "$30 to $500 per year",
+    "ThemePrice": "0$ to $100 (one-time fee)",
+    "ProWebDesPrice": "100$ to $5,000 (one-time fee) ",
+    "DIYWBPrice": "$100 to $400 per year",
+    "SSLPrice": "$0 to $249 per year",
+    "DBnAPIPrice": "costs varies depending on usage",
+    "TotalCostPriceYr": "$130 to $1169+ /yr",
+    "TotalCostPriceOne": "+ $100 to $5100 (one time fee)",
+
+    "MPBread2": "This is why we offer our monthly plan. With this, you don’t need to allocate a large sum upfront to create a website, allowing you to focus your budget on growing your business.\n\nWith a fixed price of $100, you can have peace of mind, knowing there won’t be any unexpected expenses.",
+    
+    "MPSubHeader1": "Which expenses do we cover?",
+    "MPBread3": "With our plan, we’ll cover all expenses except for database and API costs, as these can scale based on usage.\n\n If the site requires database or API integration, we will collaborate to plan and discuss how it will function and how costs may fluctuate based on traffic. This ensures you have full transparency about what to expect before making the decision to proceed with implementation.",
+    
+    "MPSubHeader2": "What is included in the plan?",
+    "MPBread4": "We'll handle designing, hosting, ensuring cybersecurity, SSL certificate, buying the domain name, deploying the website as well as constructing databases and integrating APIs if needed. \n Once again we do NOT cover the database and API expenses since it scales depending on usage. \n\n You'll have 24/7 customer support as well as unlimited revisions which means you'll be able to adjust your website at anytime.",
+    
+    "MPSubHeader3": "What does the process look like?",
+    "MPBread5": "The process starts with an initial meeting where we discuss your website requirements. We’ll explore the purpose of the website, the design and theme you envision, the domain name you prefer, and the specific functionalities you need.\n\nBased on this, we’ll create a detailed roadmap and hold regular check-ins to present mock-ups, gather your feedback, and refine the design. These discussions ensure we align with your vision and make any necessary adjustments or additions to the website.\n\nOnce everything is finalized, we’ll deploy the website, making it live and accessible online. Additionally, we’ll ensure it is fully optimized for search engines to help you reach your audience effectively.  \n\n You’ll be committed to us for a 12-month period, after which you can choose to go independent at any time. This means you’ll take over the hosting and domain management. We’ll assist you throughout the transition process. However, this also means you’ll no longer have access to unlimited free revisions and 24/7 customer support.",
+
+    "MPSubHeader4": "Sounds interesting?",
+    "MPBread6": "Book a meeting with us to discuss how we can work together!",
+
+    "OrderButton": "Book a meeting",
+    
     "TradPlan": "Traditional plan",
+
+    "TPHeaderDesc": "with our traditional plan you only need to pay once",
+    "TPBread1": "Are you starting a new buisness or just in need for a new website that requires little maintenance, then this is the perfect option for you. \n \n Creating a website can cost a lot of money. These are the cost to create an websiste according to",
+    "TPBread2": "We offer professional results for an affordable price, with us you don't need to spend a fortune. Our price ranges are: \n $700 for a simple website with 1-3 pages without DB, authorization and APIs. \n $1000 for a website with 1-5 pages with authorization(sign up and login) and a database table holding users \n $1500 for a website with 1-6 pages with auth, custom database tables apart from users with one API integration. \n $2000 for a website with any amount of pages with auth, custom database tables and all API integrations you want. \n\n OBS: we do not cover the usage cost of databases and APIs ",
+    
+    "TPSubHeader1": "Which expenses do we cover?",
+    "TPBread3": "With our plan, we’ll cover all expenses except for domain name, hosting, database and API costs, as these can scale based on usage.\n\n If the site requires database or API integration, we will collaborate to plan and discuss how it will function and how costs may fluctuate based on traffic. This ensures you have full transparency about what to expect before making the decision to proceed with implementation. \n\n Even if we don't cover some parts we will of course help you set it up and ensure you understand the process.",
+    
+    "TPSubHeader2": "What is included in the plan?",
+    "TPBread4": "We'll handle designing, ensuring cybersecurity, SSL certificate(first year), helping you buy the domain name, hosting and deploy the website as well as constructing databases and integrating APIs if needed. \n Once again we do NOT cover the database and API expenses since it scales depending on usage. \n\n After deployment you'll have customer support for 6 month to ensure your website has a smooth launch before going fully independent. During that time you have one revision that you can use free of charge. Additionally revisions after the first one will cost depending on the demand.",
+    
+    "TPSubHeader3": "What does the process look like?",
+    "TPBread5": "The process starts with an initial meeting where we discuss your website requirements. We’ll explore the purpose of the website, the design and theme you envision, the domain name you prefer, and the specific functionalities you need.\n\nBased on this, we’ll decide on the price, create a detailed roadmap and hold regular check-ins to present mock-ups, gather your feedback, and refine the design. These discussions ensure we align with your vision and make any necessary adjustments to the website. During this time you have unlimited revisions within your set price range boundary.\n\nOnce everything is finalized, we’ll help you deploy the website, making it live and accessible online. Additionally, we’ll ensure it is fully optimized for search engines to help you reach your audience effectively.",
+
+    "TPSubHeader4": "Sounds interesting?",
+    "TPBread6": "Book a meeting with us to discuss how we can work together!",
+
+
+
 
     "username": {
         "label": "username",
