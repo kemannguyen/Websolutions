@@ -13,7 +13,7 @@ export const ContactPage = () => {
     try {
       const response = await fetch("/api/send-email", {
         method: "POST",
-        body: form.current,
+        body: formData,
       });
 
       if (response.ok) {
