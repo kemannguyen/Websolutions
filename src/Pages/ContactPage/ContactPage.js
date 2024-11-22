@@ -39,33 +39,35 @@ const ContactPage = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>Name</label>
-      <input
-        type="text"
-        name="user_name"
-        value={formData.user_name}
-        onChange={handleChange}
-        required
-      />
-      <label>Email</label>
-      <input
-        type="email"
-        name="user_email"
-        value={formData.user_email}
-        onChange={handleChange}
-        required
-      />
-      <label>Message</label>
-      <textarea
-        name="message"
-        value={formData.message}
-        onChange={handleChange}
-        required
-      />
-      <button type="submit">Send</button>
-      <p>{status}</p>
-    </form>
+    <div className="flex-dir-vert navbarpadding">
+      <form onSubmit={handleSubmit}>
+        <label>Name</label>
+        <input
+          type="text"
+          name="user_name"
+          value={formData.user_name}
+          onChange={handleChange}
+          required
+        />
+        <label>Email</label>
+        <input
+          type="email"
+          name="user_email"
+          value={formData.user_email}
+          onChange={handleChange}
+          required
+        />
+        <label>Message</label>
+        <textarea
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          required
+        />
+        <button type="submit">Send</button>
+        <p>{status}</p>
+      </form>
+    </div>
   );
 };
 
