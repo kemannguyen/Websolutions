@@ -32,11 +32,11 @@ export const ContactPage = () => {
       <section className="navbarpadding">
         <form className="flex-dir-ver" ref={form} onSubmit={sendEmail}>
           <label>Name</label>
-          <input type="text" name="from_name" />
+          <input type="text" name="from_name" required />
           <label>Email</label>
-          <input type="email" name="from_email" />
+          <input type="email" name="from_email" required />
           <label>Message</label>
-          <textarea name="message" />
+          <textarea name="message" required />
           <input type="submit" value="Send" />
         </form>
       </section>
