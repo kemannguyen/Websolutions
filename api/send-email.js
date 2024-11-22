@@ -18,6 +18,7 @@ export default async function handler(req, res) {
       { from_name, from_email, message },
       { publicKey: process.env.API_PUBLIC }
     );
+    console.log(process.env.API_PUBLIC);
 
     res.status(200).json({ success: true, response });
   } catch (error) {
