@@ -16,6 +16,9 @@ export const ContactPage = () => {
         body: JSON.stringify(formObject),
       });
 
+      const textResponse = await response.text(); // Capture raw text
+      console.log("Raw Response:", textResponse);
+
       if (response.ok) {
         console.log("SUCCESS!");
       } else {
@@ -23,7 +26,11 @@ export const ContactPage = () => {
         console.error("FAILED...", error);
       }
     } catch (err) {
-      console.error("Error connecting to the serverless function:", err);
+      console.error(
+        "Error connecting to the serverless function:",
+        err,
+        textResponse
+      );
     }
   };
 
