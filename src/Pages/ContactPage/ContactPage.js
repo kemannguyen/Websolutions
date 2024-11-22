@@ -1,46 +1,71 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
-export const ContactPage = () => {
-  const form = useRef();
+const ContactPage = () => {
+  const [formData, setFormData] = useState({
+    user_name: "",
+    user_email: "",
+    message: "",
+  });
 
-  const sendEmail = async (e) => {
+  const [status, setStatus] = useState("");
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-    const formData = new FormData(form.current);
-
-    console.log("form", formData);
+    setStatus("Sending...");
 
     try {
-      const response = await fetch("/api/send-email", {
+      const response = await fetch("/api/sendEmail", {
         method: "POST",
-        body: formData,
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       });
 
       if (response.ok) {
-        console.log("SUCCESS!");
+        setStatus("Email sent successfully!");
+        setFormData({ user_name: "", user_email: "", message: "" });
       } else {
-        const error = await response.json();
-        console.error("FAILED...", error);
+        const errorData = await response.json();
+        setStatus(`Failed to send email: ${errorData.message}`);
       }
-    } catch (err) {
-      console.error("Error connecting to the serverless function:", err);
+    } catch (error) {
+      setStatus("Failed to send email. Please try again later.");
     }
   };
 
   return (
-    <div className="general">
-      <section className="navbarpadding">
-        <form className="flex-dir-ver" ref={form} onSubmit={sendEmail}>
-          <label>Name</label>
-          <input type="text" name="from_name" required />
-          <label>Email</label>
-          <input type="email" name="from_email" required />
-          <label>Message</label>
-          <textarea name="message" required />
-          <input type="submit" value="Send" />
-        </form>
-      </section>
-    </div>
+    <form onSubmit={handleSubmit}>
+      <label>Name</label>
+      <input
+        type="text"
+        name="user_name"
+        value={formData.user_name}
+        onChange={handleChange}
+        required
+      />
+      <label>Email</label>
+      <input
+        type="email"
+        name="user_email"
+        value={formData.user_email}
+        onChange={handleChange}
+        required
+      />
+      <label>Message</label>
+      <textarea
+        name="message"
+        value={formData.message}
+        onChange={handleChange}
+        required
+      />
+      <button type="submit">Send</button>
+      <p>{status}</p>
+    </form>
   );
 };
 
