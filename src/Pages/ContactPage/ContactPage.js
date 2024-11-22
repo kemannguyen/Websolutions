@@ -7,14 +7,13 @@ export const ContactPage = () => {
     e.preventDefault();
 
     const formData = new FormData(form.current);
-    const formObject = Object.fromEntries(formData.entries());
 
     console.log("form", formData);
 
     try {
       const response = await fetch("/api/send-email", {
         method: "POST",
-        body: formData,
+        body: form.current,
       });
 
       if (response.ok) {
