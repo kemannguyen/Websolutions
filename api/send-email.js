@@ -7,16 +7,12 @@ export default async function handler(req, res) {
 
   const data = req.body;
 
-  if (!from_name || !from_email || !message) {
-    return res.status(400).json({ error: "All fields are required" });
-  }
-
   try {
-    const response = await emailjs.send(
+    const response = await emailjs.sendForm(
       process.env.SERVICE_ID,
       process.env.TEMPLATE_ID,
       data,
-      { publicKey: process.env.API_PUBLIC }
+      process.env.API_PUBLIC
     );
 
     res.status(200).json({ success: true, response });
