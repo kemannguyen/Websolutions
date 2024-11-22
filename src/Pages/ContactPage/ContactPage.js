@@ -1,71 +1,40 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const ContactPage = () => {
-  const [formData, setFormData] = useState({
-    user_name: "",
-    user_email: "",
-    message: "",
-  });
+  const form = useRef();
 
-  const [status, setStatus] = useState("");
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    setStatus("Sending...");
-
-    try {
-      const response = await fetch("/api/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: process.env.REACT_APP_API_PUBLIC,
+        }
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
         },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        setStatus("Email sent successfully!");
-        setFormData({ user_name: "", user_email: "", message: "" });
-      } else {
-        const errorData = await response.json();
-        setStatus(`Failed to send email: ${errorData.message}`);
-      }
-    } catch (error) {
-      setStatus("Failed to send email. Please try again later.");
-    }
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
   };
 
   return (
-    <div className="flex-dir-vert navbarpadding">
-      <form onSubmit={handleSubmit}>
+    <div className="general navbarpadding">
+      <form className="flex-dir-ver" ref={form} onSubmit={sendEmail}>
         <label>Name</label>
-        <input
-          type="text"
-          name="user_name"
-          value={formData.user_name}
-          onChange={handleChange}
-          required
-        />
+        <input type="text" name="user_name" />
         <label>Email</label>
-        <input
-          type="email"
-          name="user_email"
-          value={formData.user_email}
-          onChange={handleChange}
-          required
-        />
+        <input type="email" name="user_email" />
         <label>Message</label>
-        <textarea
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        />
-        <button type="submit">Send</button>
-        <p>{status}</p>
+        <textarea name="message" />
+        <input type="submit" value="Send" />
       </form>
     </div>
   );
