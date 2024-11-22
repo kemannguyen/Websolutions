@@ -5,7 +5,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
-  const { from_name, from_email, message } = req.body;
+  const data = req.body;
 
   if (!from_name || !from_email || !message) {
     return res.status(400).json({ error: "All fields are required" });
@@ -15,7 +15,7 @@ export default async function handler(req, res) {
     const response = await emailjs.send(
       process.env.SERVICE_ID,
       process.env.TEMPLATE_ID,
-      { from_name, from_email, message },
+      data,
       { publicKey: process.env.API_PUBLIC }
     );
 
