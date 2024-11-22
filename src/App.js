@@ -33,7 +33,7 @@ function App() {
             <Route path="/referens" element={<ProjectPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/login" element={<ProjectPage />} />
-            <Route path="*" element={<Navigate to="/" />} />
+            {/* <Route path="*" element={<Navigate to="/" />} /> */}
           </Routes>
         </div>
       </ScrollProvider>
