@@ -23,14 +23,10 @@ export const ContactPage = () => {
         console.log("SUCCESS!");
       } else {
         const error = await response.json();
-        console.error("FAILED...", error);
+        console.error("FAILED...", error, textResponse);
       }
     } catch (err) {
-      console.error(
-        "Error connecting to the serverless function:",
-        err,
-        textResponse
-      );
+      console.error("Error connecting to the serverless function:", err);
     }
   };
 
