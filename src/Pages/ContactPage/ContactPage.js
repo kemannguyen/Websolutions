@@ -1,24 +1,30 @@
 import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
 
 export const ContactPage = () => {
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, form.current, {
-        publicKey: process.env.API_PUBLIC,
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+    const formData = new FormData(form.current);
+    const formObject = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formObject),
+      });
+
+      if (response.ok) {
+        console.log("SUCCESS!");
+      } else {
+        const error = await response.json();
+        console.error("FAILED...", error);
+      }
+    } catch (err) {
+      console.error("Error connecting to the serverless function:", err);
+    }
   };
 
   return (
