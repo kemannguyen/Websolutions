@@ -117,6 +117,13 @@
     "TPBread6": "Boka ett möte med oss för att diskutera vårt samarbete tillsammans!",
 
 
+    "CONTACTPAGE": "---------------------------",
+    "ContactUs": "Kontakta oss",
+    "Name": "Namn",
+    "Email": "Epost",
+    "Message": "Meddelande",
+    "Send": "Skicka",
+
     "username": {
         "label": "username",
         "placeholder": "placeholder..."

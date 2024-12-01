@@ -5,3 +5,10 @@
 .width-70p {
   width: 70%;
 }
+
+@media (max-width: 490px) {
+  .small-img {
+    width: 100%;
+    height: 100%;
+  }
+}

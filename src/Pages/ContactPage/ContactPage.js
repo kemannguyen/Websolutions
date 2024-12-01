@@ -2,8 +2,10 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "../../Styles/ContactPage.css";
 import Snackbar from "../../Components/Snackbar";
+import { useTranslation } from "react-i18next";
 
 const ContactPage = () => {
+  const { t } = useTranslation();
   const form = useRef();
 
   //Snackbar
@@ -45,7 +47,9 @@ const ContactPage = () => {
   return (
     <div className="general navbarpadding">
       <div className="flex-dir-hor paddingy-20">
-        <text className="font-title font-gray mx-auto bold">Contact us</text>
+        <text className="font-title font-gray mx-auto bold">
+          {t("ContactUs")}
+        </text>
       </div>
       <form
         id="msg-form"
@@ -53,23 +57,23 @@ const ContactPage = () => {
         ref={form}
         onSubmit={sendEmail}
       >
-        <label>Name</label>
+        <label>{t("Name")}</label>
         <input
           className="mt-10 mb-10 input"
           type="text"
           name="from_name"
           required
         />
-        <label>Email</label>
+        <label>{t("Email")}</label>
         <input
           className="mt-10 mb-10 input"
           type="email"
           name="from_email"
           required
         />
-        <label>Message</label>
+        <label>{t("Message")}</label>
         <textarea className="msgbox" type="text" name="message" required />
-        <input type="submit" value="Send" />
+        <input type="submit" value={t("Send")} />
       </form>
       {snackbarVisible && (
         <Snackbar
