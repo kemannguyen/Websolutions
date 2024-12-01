@@ -3,10 +3,12 @@ import "../Styles/CustomSelector.css";
 import i18n from "../i18n";
 import arrowup from "../Image/arrow-ios-upward-outline.png";
 import arrowdown from "../Image/arrow-ios-downward-outline.png";
+import SV from "../Image/SV.png";
+import GB from "../Image/GB.png";
 
 const options = [
-  { value: "en", label: "EN", icon: "🇬🇧" },
-  { value: "sv", label: "SV", icon: "🇸🇪" },
+  { value: "en", label: "EN", icon: GB },
+  { value: "sv", label: "SV", icon: SV },
 ];
 
 const CustomSelector = () => {
@@ -39,7 +41,7 @@ const CustomSelector = () => {
   return (
     <div className="custom-select work-sans font-small bold-mid">
       <div className="select-header" onClick={openSelector}>
-        <span className="icon">{selectedLanguage.icon}</span>
+        <img className="icon" src={selectedLanguage.icon} />
         <span>{selectedLanguage.label}</span>
         <span>
           <img className="arrow" src={arrowIcon} />
@@ -52,7 +54,7 @@ const CustomSelector = () => {
             className="select-option"
             onClick={() => HandleClick(option)}
           >
-            <span className="icon">{option.icon}</span>
+            <img className="icon" src={option.icon} />
             <span>{option.label}</span>
           </div>
         ))}

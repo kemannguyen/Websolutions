@@ -1,0 +1,29 @@
+.contact-form {
+  width: 60%;
+}
+
+.msgbox {
+  height: 100px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  font-size: larger;
+  resize: none;
+  border-radius: 1cap;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  padding-left: 5px;
+}
+
+.input {
+  border-radius: 0.7cap;
+  font-size: medium;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
