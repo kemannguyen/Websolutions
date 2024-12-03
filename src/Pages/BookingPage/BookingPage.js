@@ -3,10 +3,15 @@ import emailjs from "@emailjs/browser";
 import "../../Styles/ContactPage.css";
 import Snackbar from "../../Components/Snackbar";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
 
-const ContactPage = () => {
+const BookingPage = () => {
   const { t } = useTranslation();
   const form = useRef();
+
+  //extract last part from url
+  const location = useLocation();
+  const patharr = location.pathname.split("/");
 
   //Snackbar
   const [snackbarVisible, setSnackbarVisible] = useState(false);
@@ -46,18 +51,19 @@ const ContactPage = () => {
 
   return (
     <div className="general navbarpadding work-sans mb-fullpage">
-      <div className="flex-dir-hor paddingy-20">
-        <text className="font-title font-gray mx-auto bold-mid-x">
-          {t("ContactUs")}
+      <div className="flex-dir-ver paddingy-20">
+        <text className="font-title font-gray mx-auto bold-mid-x mb-10">
+          {t("BookAMeeting")}
         </text>
+        <p className="font-gray bold mx-auto">{t("BookingDesc")}</p>
       </div>
       <form
         id="msg-form"
-        className="flex-dir-ver contact-form mx-auto"
+        className="flex-dir-ver contact-form mx-auto mt-20"
         ref={form}
         onSubmit={sendEmail}
       >
-        <input type="text" hidden name="subject" value={"msg"}></input>
+        <input type="text" hidden name="subject" value={"booking"}></input>
         <label>{t("Name")}</label>
         <input
           className="mt-10 mb-10 input"
@@ -72,8 +78,13 @@ const ContactPage = () => {
           name="from_email"
           required
         />
-        <label>{t("Message")}</label>
-        <textarea className="msgbox" type="text" name="message" required />
+        <textarea
+          className="msgbox"
+          type="text"
+          name="message"
+          value={`request for meeting about ${patharr[2]} plan`}
+          hidden
+        />
         <input className="work-sans bold-mid" type="submit" value={t("Send")} />
       </form>
       {snackbarVisible && (
@@ -87,4 +98,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default BookingPage;

@@ -13,6 +13,7 @@ import { ScrollProvider } from "./Components/ScrollContext";
 import Footer from "./Components/Footer";
 import PricingPage from "./Pages/PricingPage/PricingPage";
 import ContactPage from "./Pages/ContactPage/ContactPage";
+import BookingPage from "./Pages/BookingPage/BookingPage";
 
 function App() {
   return (
@@ -33,7 +34,8 @@ function App() {
             <Route path="/referens" element={<ProjectPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/login" element={<ProjectPage />} />
-            {/* <Route path="*" element={<Navigate to="/" />} /> */}
+            <Route path="/booking/*" element={<BookingPage />} />
+            <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </div>
       </ScrollProvider>

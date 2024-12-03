@@ -3,11 +3,18 @@ import { useTranslation } from "react-i18next";
 import CostImg from "../../Image/CartoonCost.png";
 import PlanImg from "../../Image/CartoonPlan.png";
 import VisibilitySensor from "react-visibility-sensor";
+import { useScroll } from "../../Components/ScrollContext";
 
 const PricingMonthPage = () => {
   const { t } = useTranslation();
-  const [isVisible, setIsVisible] = useState(false);
 
+  const { scrollTo } = useScroll();
+
+  const ToBooking = () => {
+    scrollTo("", "/booking/monthly");
+  };
+
+  const [isVisible, setIsVisible] = useState(false);
   const onVisibilityChange = (visible) => {
     if (visible) {
       setIsVisible(true);
@@ -130,7 +137,10 @@ const PricingMonthPage = () => {
         {t("MPSubHeader4")}
       </text>
       <p className="font-gray paddingy-10 break-line">{t("MPBread6")}</p>
-      <button className="mt-10 padding-10px btn-rounded white ">
+      <button
+        className="mt-10 padding-10px btn-rounded white "
+        onClick={ToBooking}
+      >
         <text className="bold">{t("OrderButton")}</text>
       </button>
     </div>

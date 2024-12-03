@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import CostImg from "../../Image/CartoonCost2.png";
 import VisibilitySensor from "react-visibility-sensor";
+import { useScroll } from "../../Components/ScrollContext";
 
 const PricingTradPage = () => {
   const { t } = useTranslation();
@@ -11,6 +12,12 @@ const PricingTradPage = () => {
     if (visible) {
       setIsVisible(true);
     }
+  };
+
+  const { scrollTo } = useScroll();
+
+  const ToBooking = () => {
+    scrollTo("", "/booking/traditional");
   };
 
   return (
@@ -128,7 +135,10 @@ const PricingTradPage = () => {
         {t("TPSubHeader4")}
       </text>
       <p className="font-gray paddingy-10 break-line">{t("TPBread6")}</p>
-      <button className="mt-10 padding-10px btn-rounded white ">
+      <button
+        className="mt-10 padding-10px btn-rounded white "
+        onClick={ToBooking}
+      >
         <text className="bold">{t("OrderButton")}</text>
       </button>
     </div>

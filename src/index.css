@@ -77,6 +77,9 @@ code {
 .break-line {
   white-space: pre-line;
 }
+.mb-fullpage {
+  margin-bottom: 50vh;
+}
 
 @media (max-width: 830px) {
   .flex-dir-h2v {

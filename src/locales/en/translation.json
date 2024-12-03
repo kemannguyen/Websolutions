@@ -125,6 +125,9 @@
     "Message": "Message",
     "Send": "Send",
 
+    "BOOKINGPAGE": "---------------------------",
+    "BookAMeeting": "Book a meeting with us",
+    "BookingDesc": "Send a meeting request here, and we’ll agree on a date for the meeting via email. The purpose of the meeting is to conduct a requirement analysis, which will allow us to tailor a solution specifically for you.",
 
     "username": {
         "label": "username",

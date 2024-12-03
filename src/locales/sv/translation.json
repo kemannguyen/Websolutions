@@ -124,6 +124,10 @@
     "Message": "Meddelande",
     "Send": "Skicka",
 
+    "BOOKINGPAGE": "---------------------------",
+    "BookAMeeting": "Boka ett möte med oss",
+    "BookingDesc": "Skicka en mötesförfrågan här, så kommer vi överens om ett datum för mötet via mail. Syftet med mötet är att genomföra en behovsanalys, vilket ger oss möjlighet att skräddarsy en lösning som passar just dig.",
+
     "username": {
         "label": "username",
         "placeholder": "placeholder..."
