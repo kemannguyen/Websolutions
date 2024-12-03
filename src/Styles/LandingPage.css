@@ -96,7 +96,7 @@
 
 /* Design/Styling  */
 .font-title {
-  font-size: 3vw;
+  font-size: 40px;
 }
 .font-large {
   font-size: 50px;
@@ -200,6 +200,11 @@
 @media (max-width: 1200px) {
   .font-title {
     font-size: 32px;
+  }
+}
+@media (max-width: 1000px) {
+  .font-title {
+    font-size: 28px;
   }
 }
 

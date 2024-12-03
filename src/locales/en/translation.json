@@ -102,7 +102,7 @@
     "TradPlan": "Traditional plan",
 
     "TPHeaderDesc": "with our traditional plan you only need to pay once",
-    "TPBread1": "Are you starting a new buisness or just in need for a new website that requires little maintenance, then this is the perfect option for you. \n \n Creating a website can cost a lot of money. These are the cost to create an websiste according to",
+    "TPBread1": "Are you starting a new buisness or just in need of a new website that requires little maintenance, then this is the perfect option for you. \n \n Creating a website can cost a lot of money. These are the cost to create an websiste according to",
     "TPBread2": "We offer professional results for an affordable price, with us you don't need to spend a fortune. Our price ranges are: \n $700 for a simple website with 1-3 pages without DB, authorization and APIs. \n $1000 for a website with 1-5 pages with authorization(sign up and login) and a database table holding users \n $1500 for a website with 1-6 pages with auth, custom database tables apart from users with one API integration. \n $2000 for a website with any amount of pages with auth, custom database tables and all API integrations you want. \n\n OBS: we do not cover the usage cost of databases and APIs ",
     
     "TPSubHeader1": "Which expenses do we cover?",
@@ -120,6 +120,7 @@
 
     "CONTACTPAGE": "---------------------------",
     "ContactUs": "Contact us",
+    "ContactDesc": "You can expect a response within 1–5 business days. Thank you for your patience!",
     "Name": "Name",
     "Email": "Email",
     "Message": "Message",
@@ -128,6 +129,7 @@
     "BOOKINGPAGE": "---------------------------",
     "BookAMeeting": "Book a meeting with us",
     "BookingDesc": "Send a meeting request here, and we’ll agree on a date for the meeting via email. The purpose of the meeting is to conduct a requirement analysis, which will allow us to tailor a solution specifically for you.",
+    "Back": "< back",
 
     "username": {
         "label": "username",

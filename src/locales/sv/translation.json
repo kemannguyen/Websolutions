@@ -66,7 +66,7 @@
     "DomainName": "Domän Namn",
     "WebHosting": "Web Hosting",
     "Theme": "Tema eller mall",
-    "ProWebDes": "professionell Web Design ",
+    "ProWebDes": "Professionell Web Design ",
     "DIYWB": "DIY Webbsidebyggare",
     "SSL": "SSL Certifikat",
     "DBnAPI": "Databaser och API",
@@ -101,7 +101,7 @@
 
     "TradPlan": "Traditionell plan",
     "TPHeaderDesc": "Med vår traditionella plan behöver du bara betala en gång.",
-    "TPBread1": "Är du i färd med att starta ett nytt företag eller behöver du bara en ny webbplats som kräver lite underhåll? Då är detta det perfekta alternativet för dig.\n\nAtt skapa en webbplats kan kosta mycket pengar. Här är kostnaderna för att skapa en webbplats enligt",
+    "TPBread1": "Håller du på att starta ett nytt företag eller behöver du bara en ny webbplats som kräver lite underhåll? Då är detta det perfekta alternativet för dig.\n\nAtt skapa en webbplats kan kosta mycket pengar. Här är kostnaderna för att skapa en webbplats enligt",
     "TPBread2": "Vi erbjuder professionella resultat till ett överkomligt pris. Hos oss behöver du inte spendera en förmögenhet. Våra prisklasser är:\n7 500 Kr för en enkel webbplats med 1-3 sidor utan databas, autentisering och API.\n10 000 kr för en webbplats med 1-5 sidor med autentisering (registrering och inloggning) och en databas som lagrar användare.\n15 000 kr för en webbplats med 1-6 sidor med autentisering, anpassade databas-tabeller förutom användare och en API-integration.\n20 000 kr för en webbplats med valfritt antal sidor med autentisering, anpassade databas-tabeller och alla API-integrationer du vill ha.\n\nOBS: Vi täcker inte användningskostnader för databaser och API",
     
     "TPSubHeader1": "Vilka kostnader täcker vi?",
@@ -119,6 +119,7 @@
 
     "CONTACTPAGE": "---------------------------",
     "ContactUs": "Kontakta oss",
+    "ContactDesc": "Du kan förvänta dig ett svar inom 1–5 arbetsdagar. Tack för ditt tålamod!",
     "Name": "Namn",
     "Email": "Epost",
     "Message": "Meddelande",
@@ -127,7 +128,7 @@
     "BOOKINGPAGE": "---------------------------",
     "BookAMeeting": "Boka ett möte med oss",
     "BookingDesc": "Skicka en mötesförfrågan här, så kommer vi överens om ett datum för mötet via mail. Syftet med mötet är att genomföra en behovsanalys, vilket ger oss möjlighet att skräddarsy en lösning som passar just dig.",
-
+    "Back": "< tillbaka",
     "username": {
         "label": "username",
         "placeholder": "placeholder..."

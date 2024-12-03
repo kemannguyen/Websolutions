@@ -1,9 +1,10 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import "../../Styles/ContactPage.css";
+import "../../Styles/BookingPage.css";
 import Snackbar from "../../Components/Snackbar";
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
+import { useScroll } from "../../Components/ScrollContext";
 
 const BookingPage = () => {
   const { t } = useTranslation();
@@ -16,6 +17,12 @@ const BookingPage = () => {
   //Snackbar
   const [snackbarVisible, setSnackbarVisible] = useState(false);
   const [snackbarMessage, setSnackbarMessage] = useState("");
+
+  //navigator
+  const { scrollTo } = useScroll();
+  const ToPricing = () => {
+    scrollTo("", `/pricing/${patharr[2]}`);
+  };
 
   const showSnackbar = (message) => {
     setSnackbarMessage(message);
@@ -51,6 +58,9 @@ const BookingPage = () => {
 
   return (
     <div className="general navbarpadding work-sans mb-fullpage">
+      <text className="backbtn" onClick={ToPricing}>
+        {t("Back")}
+      </text>
       <div className="flex-dir-ver paddingy-20">
         <text className="font-title font-gray mx-auto bold-mid-x">
           {t("BookAMeeting")}
@@ -88,7 +98,11 @@ const BookingPage = () => {
           value={`request for meeting about ${patharr[2]} plan`}
           hidden
         />
-        <input className="work-sans bold-mid" type="submit" value={t("Send")} />
+        <input
+          className="work-sans bold-mid mt-10 padding-10px btn-rounded white "
+          type="submit"
+          value={t("Send")}
+        />
       </form>
       {snackbarVisible && (
         <Snackbar
