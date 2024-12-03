@@ -48,39 +48,41 @@ const Navbar = () => {
     scrollTo("", "/contact");
   };
   return (
-    <div className="navbar-containter">
-      <div className="flex-dir-hor">
-        <p className="logo" onClick={ToHome}>
-          <span className="bold">Web</span>
-          <span>Solutions</span>
-        </p>
-        <p className="navbuttons work-sans" onClick={ToHome}>
-          {t("Overview")}
-        </p>
-        <p className="navbuttons work-sans" onClick={ToPricing}>
-          {t("Price")}
-        </p>
-        <p className="navbuttons work-sans" onClick={ToProject}>
-          {t("Referens")}
-        </p>
-        <p className="navbuttons work-sans" onClick={ToContact}>
-          {t("Contact")}
-        </p>
+    <div className="navbar">
+      <div className="navbar-containter">
+        <div className="flex-dir-hor">
+          <p className="logo" onClick={ToHome}>
+            <span className="bold">Web</span>
+            <span>Solutions</span>
+          </p>
+          <p className="navbuttons work-sans" onClick={ToHome}>
+            {t("Overview")}
+          </p>
+          <p className="navbuttons work-sans" onClick={ToPricing}>
+            {t("Price")}
+          </p>
+          <p className="navbuttons work-sans" onClick={ToProject}>
+            {t("Referens")}
+          </p>
+          <p className="navbuttons work-sans" onClick={ToContact}>
+            {t("Contact")}
+          </p>
 
-        <p className="navbuttons ml-auto work-sans">{t("Login")}</p>
-        <p className="navbuttons end work-sans">{t("Signup")}</p>
-        <span className="dropdown" />
-        <CustomSelector />
+          <p className="navbuttons ml-auto work-sans">{t("Login")}</p>
+          <p className="navbuttons end work-sans">{t("Signup")}</p>
+          <span className="dropdown" />
+          <CustomSelector />
 
-        <img
-          className="menu-btn"
-          src={menubtn ? xicon : icon}
-          onClick={openMenu}
-          alt=""
-        />
-      </div>
-      <div className={menubtn ? "unhide" : "hide"}>
-        <NavScreen openMenu={setMenuBtn} />
+          <img
+            className="menu-btn"
+            src={menubtn ? xicon : icon}
+            onClick={openMenu}
+            alt=""
+          />
+        </div>
+        <div className={menubtn ? "unhide" : "hide"}>
+          <NavScreen openMenu={setMenuBtn} />
+        </div>
       </div>
     </div>
   );
