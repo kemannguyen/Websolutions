@@ -34,7 +34,8 @@ function App() {
             <Route path="/referens" element={<ProjectPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/login" element={<ProjectPage />} />
-            <Route path="/booking/*" element={<BookingPage />} />
+            <Route path="/booking/monthly" element={<BookingPage />} />
+            <Route path="/booking/traditional" element={<BookingPage />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </div>

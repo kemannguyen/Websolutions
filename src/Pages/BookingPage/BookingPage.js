@@ -52,8 +52,11 @@ const BookingPage = () => {
   return (
     <div className="general navbarpadding work-sans mb-fullpage">
       <div className="flex-dir-ver paddingy-20">
-        <text className="font-title font-gray mx-auto bold-mid-x mb-10">
+        <text className="font-title font-gray mx-auto bold-mid-x">
           {t("BookAMeeting")}
+        </text>
+        <text className="font-subtitle font-gray mx-auto bold mb-10">
+          {patharr[2]} plan
         </text>
         <p className="font-gray bold mx-auto">{t("BookingDesc")}</p>
       </div>
