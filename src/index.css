@@ -81,6 +81,10 @@ code {
   margin-bottom: 50vh;
 }
 
+.centerbreak {
+  text-align-last: center;
+}
+
 @media (max-width: 830px) {
   .flex-dir-h2v {
     flex-direction: column !important;

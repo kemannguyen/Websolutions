@@ -1,6 +1,9 @@
 .contact-form {
   width: 60%;
 }
+.contact-desc {
+  width: 80%;
+}
 
 .msgbox {
   height: 100px;
@@ -44,6 +47,18 @@
     min-width: 500px;
     margin-bottom: 1000px;
   }
+  .contact-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contact-desc {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
   .contact-form {
     width: 100%;
   }

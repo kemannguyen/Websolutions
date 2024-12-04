@@ -42,7 +42,7 @@ const LandingPage = () => {
         <div className="img-text-margin flex-dir-hor flex-center ">
           {" "}
           <div className="flex-dir-ver flex-wraps paddingx-5p">
-            <text className="white bold-mid mx-auto font-title fade-in font-shadow ">
+            <text className="white bold-mid mx-auto font-title fade-in font-shadow centerbreak">
               {t("ImgText")}
             </text>
             <text className="white bold-mid font-bread mx-auto slide-in ">

@@ -4,10 +4,13 @@ import "../../Styles/ContactPage.css";
 import Snackbar from "../../Components/Snackbar";
 import { useTranslation } from "react-i18next";
 import bgimg from "../../Image/contactbg.png";
+import UseTitle from "../../Components/UseTitle";
 
 const ContactPage = () => {
   const { t } = useTranslation();
   const form = useRef();
+
+  UseTitle(t("Contact"));
 
   //Snackbar
   const [snackbarVisible, setSnackbarVisible] = useState(false);
@@ -53,7 +56,9 @@ const ContactPage = () => {
           <text className="font-title mx-auto bold-mid-x">
             {t("ContactUs")}
           </text>
-          <p className="font-gray bold mx-auto">{t("ContactDesc")}</p>
+          <p className="font-gray bold mx-auto centerbreak">
+            {t("ContactDesc")}
+          </p>
         </div>
         <form
           id="msg-form"
@@ -67,6 +72,7 @@ const ContactPage = () => {
             className="mt-10 mb-10 input"
             type="text"
             name="from_name"
+            placeholder={t("NameP")}
             required
           />
           <label>{t("Email")}</label>
@@ -74,10 +80,17 @@ const ContactPage = () => {
             className="mt-10 mb-10 input"
             type="email"
             name="from_email"
+            placeholder={t("EmailP")}
             required
           />
           <label>{t("Message")}</label>
-          <textarea className="msgbox" type="text" name="message" required />
+          <textarea
+            className="msgbox"
+            type="text"
+            placeholder={t("MessageP")}
+            name="message"
+            required
+          />
           <input
             className="work-sans bold-mid mt-10 padding-10px btn-rounded white "
             type="submit"

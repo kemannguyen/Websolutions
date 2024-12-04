@@ -121,14 +121,19 @@
     "ContactUs": "Kontakta oss",
     "ContactDesc": "Du kan förvänta dig ett svar inom 1–5 arbetsdagar. Tack för ditt tålamod!",
     "Name": "Namn",
+    "NameP": "Skriv ditt namn...",
     "Email": "Epost",
+    "EmailP": "Skriv din epost...",
     "Message": "Meddelande",
+    "MessageP": "Skriv ditt meddelande...",
     "Send": "Skicka",
 
     "BOOKINGPAGE": "---------------------------",
     "BookAMeeting": "Boka ett möte med oss",
     "BookingDesc": "Skicka en mötesförfrågan här, så kommer vi överens om ett datum för mötet via mail. Syftet med mötet är att genomföra en behovsanalys, vilket ger oss möjlighet att skräddarsy en lösning som passar just dig.",
     "Back": "< tillbaka",
+
+
     "username": {
         "label": "username",
         "placeholder": "placeholder..."

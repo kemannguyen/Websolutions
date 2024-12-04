@@ -122,8 +122,11 @@
     "ContactUs": "Contact us",
     "ContactDesc": "You can expect a response within 1–5 business days. Thank you for your patience!",
     "Name": "Name",
+    "NameP": "Enter your name...",
     "Email": "Email",
+    "EmailP": "Enter your email...",
     "Message": "Message",
+    "MessageP": "Write your message...",
     "Send": "Send",
 
     "BOOKINGPAGE": "---------------------------",
