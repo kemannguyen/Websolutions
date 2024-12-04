@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import "../../Styles/ContactPage.css";
 import Snackbar from "../../Components/Snackbar";
 import { useTranslation } from "react-i18next";
+import bgimg from "../../Image/contactbg.png";
 
 const ContactPage = () => {
   const { t } = useTranslation();
@@ -45,49 +46,52 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="general navbarpadding work-sans mb-fullpage">
-      <div className="flex-dir-ver paddingy-20">
-        <text className="font-title font-gray mx-auto bold-mid-x">
-          {t("ContactUs")}
-        </text>
-        <p className="font-gray bold mx-auto">{t("ContactDesc")}</p>
+    <div>
+      <img className="bgimg" src={bgimg} />
+      <div className="general navbarpadding work-sans mb-fullpage">
+        <div className="flex-dir-ver paddingy-20">
+          <text className="font-title mx-auto bold-mid-x">
+            {t("ContactUs")}
+          </text>
+          <p className="font-gray bold mx-auto">{t("ContactDesc")}</p>
+        </div>
+        <form
+          id="msg-form"
+          className="flex-dir-ver contact-form mx-auto paddingy-20"
+          ref={form}
+          onSubmit={sendEmail}
+        >
+          <input type="text" hidden name="subject" value={"msg"}></input>
+          <label>{t("Name")}</label>
+          <input
+            className="mt-10 mb-10 input"
+            type="text"
+            name="from_name"
+            required
+          />
+          <label>{t("Email")}</label>
+          <input
+            className="mt-10 mb-10 input"
+            type="email"
+            name="from_email"
+            required
+          />
+          <label>{t("Message")}</label>
+          <textarea className="msgbox" type="text" name="message" required />
+          <input
+            className="work-sans bold-mid mt-10 padding-10px btn-rounded white "
+            type="submit"
+            value={t("Send")}
+          />
+        </form>
+        {snackbarVisible && (
+          <Snackbar
+            message={snackbarMessage}
+            duration={3000}
+            onClose={handleCloseSnackbar}
+          />
+        )}
       </div>
-      <form
-        id="msg-form"
-        className="flex-dir-ver contact-form mx-auto"
-        ref={form}
-        onSubmit={sendEmail}
-      >
-        <input type="text" hidden name="subject" value={"msg"}></input>
-        <label>{t("Name")}</label>
-        <input
-          className="mt-10 mb-10 input"
-          type="text"
-          name="from_name"
-          required
-        />
-        <label>{t("Email")}</label>
-        <input
-          className="mt-10 mb-10 input"
-          type="email"
-          name="from_email"
-          required
-        />
-        <label>{t("Message")}</label>
-        <textarea className="msgbox" type="text" name="message" required />
-        <input
-          className="work-sans bold-mid mt-10 padding-10px btn-rounded white "
-          type="submit"
-          value={t("Send")}
-        />
-      </form>
-      {snackbarVisible && (
-        <Snackbar
-          message={snackbarMessage}
-          duration={3000}
-          onClose={handleCloseSnackbar}
-        />
-      )}
     </div>
   );
 };

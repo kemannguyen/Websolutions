@@ -72,7 +72,7 @@ const BookingPage = () => {
       </div>
       <form
         id="msg-form"
-        className="flex-dir-ver contact-form mx-auto mt-20"
+        className="flex-dir-ver contact-form mx-auto mt-20 paddingy-20"
         ref={form}
         onSubmit={sendEmail}
       >
