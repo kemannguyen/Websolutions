@@ -17,8 +17,15 @@
   width: 40vw;
 }
 
-
-
 .textunderline {
   text-decoration: underline;
+}
+
+.backbtn2 {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.backbtn2:hover {
+  color: rgb(208, 208, 208);
 }

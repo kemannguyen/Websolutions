@@ -2,11 +2,14 @@ import React from "react";
 import { ProjectData } from "./ProjectData";
 import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useScroll } from "../../Components/ScrollContext";
 
 const ProjectInfoPage = () => {
   //extract last part from url
   const location = useLocation();
   const patharr = location.pathname.split("/");
+
+  //Extract data
   const title = ProjectData[patharr[2]].title;
   const imgsrc = ProjectData[patharr[2]].imgsrc;
   const description = ProjectData[patharr[2]].description;
@@ -22,8 +25,17 @@ const ProjectInfoPage = () => {
     } catch (e) {}
   };
 
+  //navigator
+  const { scrollTo } = useScroll();
+  const ToReferenses = () => {
+    scrollTo("", `/referens`);
+  };
+
   return (
     <div className="general navbarpadding">
+      <text className="backbtn2" onClick={ToReferenses}>
+        {t("Back")}
+      </text>
       <div className="flex-dir-hor">
         <div className="padding-20px">
           <img className="projectimg" src={imgsrc} />
