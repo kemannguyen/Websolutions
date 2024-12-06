@@ -134,6 +134,17 @@
     "BookingDesc": "Send a meeting request here, and we’ll agree on a date for the meeting via email. The purpose of the meeting is to conduct a requirement analysis, which will allow us to tailor a solution specifically for you.",
     "Back": "< back",
 
+
+    "PROJECTPAGE": "---------------------------",
+    "ReferensDesc":"These are demos similar to what clients has ordered",
+    "VisitSite":"Visit site",
+    "Proj1Desc": "test desc eng",
+    "Proj1Price": "$750 ",
+    
+    "Proj2Desc": "test desc eng",
+    "Proj2Price": "$1500",
+
+
     "username": {
         "label": "username",
         "placeholder": "placeholder..."

@@ -1,0 +1,24 @@
+.galleryimg {
+  width: 17vw;
+  min-width: 200px;
+  aspect-ratio: 1.6;
+  transition: 0.3s ease;
+}
+.galleryimg:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s ease;
+}
+
+.projectimg {
+  width: 40vw;
+}
+
+
+
+.textunderline {
+  text-decoration: underline;
+}

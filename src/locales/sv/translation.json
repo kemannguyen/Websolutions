@@ -134,6 +134,15 @@
     "Back": "< tillbaka",
 
 
+    "PROJECTPAGE": "---------------------------",
+    "ReferensDesc":"",
+    "VisitSite":"Besök sidan",
+    "Proj1Desc": "test desc sv",
+    "Proj1Price": "7500 kr",
+
+    "Proj2Desc": "test desc sv",
+    "Proj2Price": "15 000 kr",
+
     "username": {
         "label": "username",
         "placeholder": "placeholder..."

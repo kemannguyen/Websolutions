@@ -14,6 +14,7 @@ import Footer from "./Components/Footer";
 import PricingPage from "./Pages/PricingPage/PricingPage";
 import ContactPage from "./Pages/ContactPage/ContactPage";
 import BookingPage from "./Pages/BookingPage/BookingPage";
+import ProjectInfoPage from "./Pages/ProjectPage/ProjectInfoPage";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
               element={<PricingPage index={1} />}
             />
             <Route path="/referens" element={<ProjectPage />} />
+            <Route path="/referens/*" element={<ProjectInfoPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/login" element={<ProjectPage />} />
             <Route path="/booking/monthly" element={<BookingPage />} />
