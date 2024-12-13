@@ -15,6 +15,7 @@ import PricingPage from "./Pages/PricingPage/PricingPage";
 import ContactPage from "./Pages/ContactPage/ContactPage";
 import BookingPage from "./Pages/BookingPage/BookingPage";
 import ProjectInfoPage from "./Pages/ProjectPage/ProjectInfoPage";
+import LoginPage from "./Pages/LoginPage/LoginPage";
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
             <Route path="/referens" element={<ProjectPage />} />
             <Route path="/referens/*" element={<ProjectInfoPage />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/login" element={<ProjectPage />} />
+            <Route path="/login" element={<LoginPage></LoginPage>} />
             <Route path="/booking/monthly" element={<BookingPage />} />
             <Route path="/booking/traditional" element={<BookingPage />} />
             <Route path="*" element={<Navigate to="/" />} />

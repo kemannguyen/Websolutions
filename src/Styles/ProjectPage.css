@@ -16,6 +16,9 @@
 .projectimg {
   width: 40vw;
 }
+.projectbp {
+  margin-left: 15px;
+}
 
 .textunderline {
   text-decoration: underline;
@@ -28,4 +31,10 @@
 
 .backbtn2:hover {
   color: rgb(208, 208, 208);
+}
+
+@media (max-width: 830px) {
+  .projectimg {
+    width: 70vw;
+  }
 }

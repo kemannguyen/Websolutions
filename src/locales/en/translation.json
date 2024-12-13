@@ -138,11 +138,20 @@
     "PROJECTPAGE": "---------------------------",
     "ReferensDesc":"These are demos similar to what clients has ordered",
     "VisitSite":"Visit site",
-    "Proj1Desc": "test desc eng",
+
+    "Proj1Desc": "This website was created for Skurup Restaurant & Grill, a cozy dining spot, to provide customers with a glimpse into the restaurant's offerings and ambiance.",
+    "Proj1BP1":"1-5 pages",
+    "Proj1BP3":"Image gallery",
+    "Proj1BP2":"Redirect to social media and contact info",
     "Proj1Price": "$750 ",
     
-    "Proj2Desc": "test desc eng",
-    "Proj2Price": "$1500",
+    "Proj2Desc": "NewGen Fashion Store, where style knows no bounds, is an online clothing destination offering a wide variety of apparel to suit every taste and occasion.",
+    "Proj2BP1": "1-7 sidor",
+"Proj2BP2": "Databas för kunder och butik",
+"Proj2BP3": "Sök, skapa och ändra databasinformation",
+"Proj2BP4": "Integration av betalnings- och e-post-API",
+    "Proj2Price": "$2000",
+    
 
 
     "username": {

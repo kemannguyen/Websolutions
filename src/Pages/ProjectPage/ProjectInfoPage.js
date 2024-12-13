@@ -13,6 +13,7 @@ const ProjectInfoPage = () => {
   const title = ProjectData[patharr[2]].title;
   const imgsrc = ProjectData[patharr[2]].imgsrc;
   const description = ProjectData[patharr[2]].description;
+  const bulletpoints = ProjectData[patharr[2]].bulletpoints;
   const price = ProjectData[patharr[2]].price;
   const link = ProjectData[patharr[2]].link;
 
@@ -31,20 +32,24 @@ const ProjectInfoPage = () => {
     scrollTo("", `/referens`);
   };
 
+  console.log(t(bulletpoints));
   return (
-    <div className="general navbarpadding">
+    <div className="general navbarpadding work-sans">
       <text className="backbtn2" onClick={ToReferenses}>
         {t("Back")}
       </text>
-      <div className="flex-dir-hor">
+      <div className="flex-dir-h2v">
         <div className="padding-20px">
           <img className="projectimg" src={imgsrc} />
         </div>
         <div className="flex-dir-ver padding-20px projectimg">
-          <text>{title}</text>
+          <text className="bold-mid-x">{title}</text>
           <p>{t(description)}</p>
-          <div className="mt-auto flex-dir-hor">
-            <text>{t(price)}</text>
+          {bulletpoints.map((point) => {
+            return <div className="projectbp">• {t(point)}</div>;
+          })}
+          <div className="mt-auto flex-dir-hor paddingy-20">
+            <text className="bold-mid">{t(price)}</text>
             <button
               className="ml-auto work-sans bold-mid paddingx-10px btn-rounded white"
               onClick={openLinkInNewTab}

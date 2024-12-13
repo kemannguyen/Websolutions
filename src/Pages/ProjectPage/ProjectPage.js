@@ -10,7 +10,7 @@ const ProjectPage = () => {
   const { t } = useTranslation();
   UseTitle(t("Referens"));
   return (
-    <div className="general work-sans">
+    <div className="general work-sans mb-fullpage">
       <section
         className="navbarpadding"
         id="proj-header"
@@ -28,12 +28,6 @@ const ProjectPage = () => {
         <div className="flex-dir-hor flex-wrap flex-center">
           <Projectlist />
         </div>
-      </section>
-      <section className="test navbarpadding">
-        <span>Test</span>
-      </section>
-      <section className="test">
-        <span>Pricing</span>
       </section>
     </div>
   );
