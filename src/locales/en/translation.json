@@ -146,10 +146,10 @@
     "Proj1Price": "$750 ",
     
     "Proj2Desc": "NewGen Fashion Store, where style knows no bounds, is an online clothing destination offering a wide variety of apparel to suit every taste and occasion.",
-    "Proj2BP1": "1-7 sidor",
-"Proj2BP2": "Databas för kunder och butik",
-"Proj2BP3": "Sök, skapa och ändra databasinformation",
-"Proj2BP4": "Integration av betalnings- och e-post-API",
+    "Proj2BP1":"1-7 pages",
+    "Proj2BP2":"Database for customers and shop",
+    "Proj2BP3":"Search, create and modify DB info",
+    "Proj2BP4":"Payment and Email API integration",
     "Proj2Price": "$2000",
     
 
